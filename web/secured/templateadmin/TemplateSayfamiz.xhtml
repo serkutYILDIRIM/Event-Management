@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <h:outputStylesheet name="css/bootstrap.css" library="admin" />
+		<h:outputStylesheet name="css/custom.css" library="kullanıcı" />
+		<h:outputStylesheet name="css/font-awesome.min.css" library="admin" />
+		<h:outputScript name="js/jquery.js" library="admin" />
+		<h:outputScript name="js/bootstrap.js" library="admin" />
+		<title>Admin Panel</title>
+                        <style> 
+body
+{
+background:url(http://localhost:8080/Organizasyon/resources/images/arkaPlan/arkaAdmin.jpg);
+
+
+/*Aşağıdaki kodlar yardımı ile farklı bir çok tarayıcıda ark plan görselinin pencerenize tam olarak konumlandığını görebilirsiniz*/
+
+-webkit-background-size: cover;
+
+-moz-background-size: cover;
+
+-o-background-size: cover;
+
+background-size: cover;;
+}
+</style>
+    </h:head>
+    
+    <body background="http://localhost:8080/Organizasyon/resources/images/arkaPlan/arkaAdmin.jpg" >
+ 
+	<div id="page">
+ 
+	    <div id="header">
+		<ui:insert name="header" >
+		  <ui:include src="/secured/templateadmin/headerPage.xhtml" />
+		</ui:insert>
+	    </div>
+ 
+	    <div id="content">
+	  	<ui:insert name="content" >
+	 	  <ui:include src="/secured/templateadmin/contentPage.xhtml" />
+	   	</ui:insert>
+	    </div>
+ 
+	    <div id="footer">
+	    	<ui:insert name="footer" >
+	    	  <ui:include src="/secured/templateadmin/footerPage.xhtml" />
+	    	</ui:insert>
+    	    </div>
+ 
+        </div>
+ 
+    </body>
+</html>
+

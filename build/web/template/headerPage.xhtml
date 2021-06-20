@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"   
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"    
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <body>
+	    <ui:composition>
+                <h:form>
+                <h:commandButton action="/kullanıcı/film/film" value="Film Organizasyonu" class="btn btn-info" />
+                <h:commandButton action="/kullanıcı/konser/konser" value="Konser Organizasyonu" class="btn btn-info" />
+                <h:commandButton action="/kullanıcı/gezi/gezi" value="Gezi Organizasyonu" class="btn btn-info" />
+                <h:commandButton action="/kullanıcı/dugun/dugun" value="Düğün Organizasyonu" class="btn btn-info" />
+                <h:commandButton action="/kullanıcı/tekneTuru/tekneTuru" value="Tekne Turu Organizasyonu" class="btn btn-info" />
+                <h:commandButton action="/kullanıcı/oyun/oyun" value="Oyun Organizasyonu" class="btn btn-info" />
+                <h:commandButton action="#{navigationBean.redirectToWelcome}" value="Admin Hızlı Erişim" class="btn btn-info" />
+                <h:commandButton action="/anasayfa" value="Ana Sayfaya Git" class="btn btn-info" />
+
+            </h:form>
+ 
+	    </ui:composition>
+    </body>
+</html>
+

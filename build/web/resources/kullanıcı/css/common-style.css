@@ -1,0 +1,20 @@
+#page{
+	width: 800px;
+	margin:auto;
+}
+
+#header{
+	width: auto;
+	height:auto;
+}
+
+#content{
+	width: auto;
+	height:auto;
+	margin-right:16px;
+}
+
+#footer{
+    position: fixed;
+    bottom: 0;
+}
